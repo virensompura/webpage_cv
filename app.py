@@ -15,7 +15,7 @@ def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-local_css("style/style.css")
+local_css("style/style.css"),
 
 
 #lottie Animation
@@ -49,11 +49,23 @@ with st.container():
         st.progress(progress_value_2)
         st.write(f"CATIA V5 Level: {skill2_levels[int(progress_value_2 * 2)]}")
 
-        st.subheader("Automation Studio")
+        st.subheader("Solidworks")
         progress_value_3 = 100 / 100  # Set the progress value to 50
         skill3_levels = ["Beginner", "Intermediate", "Advanced"]
         st.progress(progress_value_3)
-        st.write(f"Automation Studio Level: {skill3_levels[int(progress_value_3 * 2)]}")
+        st.write(f"Solidworks Level: {skill3_levels[int(progress_value_3 * 2)]}")
+
+        st.subheader("MATLAB/SIMULINK")
+        progress_value_4 = 20 / 100  # Set the progress value to 50
+        skill4_levels = ["Beginner", "Intermediate", "Advanced"]
+        st.progress(progress_value_4)
+        st.write(f"MATLAB/SIMULINK Level: {skill4_levels[int(progress_value_4 * 2)]}")
+
+        st.subheader("Automation Studio")
+        progress_value_5 = 100 / 100  # Set the progress value to 50
+        skill5_levels = ["Beginner", "Intermediate", "Advanced"]
+        st.progress(progress_value_5)
+        st.write(f"Automation Studio Level: {skill5_levels[int(progress_value_5 * 2)]}")
 
     with right_column:
         st_lottie(lottie_coding, height=300, key="coding")
