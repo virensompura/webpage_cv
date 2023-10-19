@@ -1,2 +1,5 @@
 # webpage_cv
-Python &amp; Streamlit Integration 
+
+## To run the website in local hosting
+  
+    python run app.py
