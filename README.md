@@ -2,4 +2,4 @@
 
 ## To run the website in local hosting
   
-    python run app.py
+    streamlit run app.py
